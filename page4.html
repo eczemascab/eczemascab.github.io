@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style_rev1.css">
+        <title>Bro idk happy birthday?? pg4</title>
+    </head>
+    <body id="normalbody">
+        <img src="card1.jpg" alt="birthday card with the lotion" width="300" height="400">
+        <br>
+        <button id="changecard" type button>Actually wait I change my mnd</button>
+        <script>
+            const changecard = document.getElementById("changecard");
+
+            changecard.addEventListener("click", function(e) {
+                document.body.id="normalbody"
+                document.body.innerHTML = "<img id='cardslideout' src='card1.jpg' alt='birthday card with the lotion' width='300' height='400'> <br> <button><a href='page5.html'>Next</a></button>"
+            });
+        </script>
+    </body>
+</html>

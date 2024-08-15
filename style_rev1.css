@@ -1,0 +1,135 @@
+#h1_1 {
+    color: blue;
+    text-align: center;
+    position: relative;
+    bottom: -250px;
+    font-size: 40px;
+
+    animation: 2s spin1 ease-in-out infinite alternate;
+  /*   animation-duration: 2s;
+    animation-name: spin;
+    animation-iteration-count: 2;
+    animation-delay: 0.5s;
+    animation-direction: alternate; */
+    
+  }
+#h1_2 {
+    text-align: center;
+    /* animation: 2s background1 infinite alternate; */
+    animation-duration: 7s;
+    animation-name: sadmsg;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  }
+
+#grazybody{
+    text-align: center;
+    animation: 2s background1 infinite alternate;
+}
+
+#normalbody{
+    text-align: center;
+    background-color: lightblue;
+}
+
+#normalbody2{
+    text-align: left;
+    background-color: lightblue;
+    padding: 1% 40% 1% 40%; 
+}
+
+#cardslideout{
+    animation: 1s spin_out 1 both;
+    text-align: center;
+}
+
+#cardslidein{
+    animation: 1s spin_out reverse both;
+    text-align: center;
+}
+
+#cardmsgslide{
+    animation: 1s cardmsgslide 1 6s both;
+    text-align: center;
+    
+}
+
+@keyframes spin1{
+    0%{
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes background1{
+    0%{
+        background-color: greenyellow;
+    }
+    50%{
+        background-color: red;
+    }
+    100%{
+        background-color: blueviolet;
+    }
+}
+
+@keyframes spin_out{
+    0%{
+    }
+    /* 33%{
+        transform: rotate(360deg);
+    }
+    66%{
+        transform: rotate(360deg);
+    } */
+    100%{
+        transform: translateY(-1000px);
+    }
+}
+
+@keyframes cardmsgslide{
+    0%{
+        transform: translateX(-2000px);
+        transform: translateY(-2000px);
+    }
+    100%{
+        transform: translateX(0px);
+        transform: translateY(0px);
+    }
+}
+
+@keyframes sadmsg{
+    0%{
+        background-color: greenyellow;
+    }
+    20%{
+        background-color: red;
+    }
+    30%{
+        background-color: blueviolet;
+    }
+    40%{
+        background-color: greenyellow;
+    }
+    50%{
+        background-color: red;
+    }
+    60%{
+        background-color: blueviolet;
+    }
+    70%{
+        background-color: red;
+    }
+    0%{
+        background-color: greenyellow;
+    }
+    90%{
+        transform: translateY(0px);
+        background-color: red;
+    }
+    100%{
+        background-color: blueviolet;
+        transform: translateY(-1000px);
+    }
+}
